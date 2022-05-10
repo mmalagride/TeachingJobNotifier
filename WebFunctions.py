@@ -31,7 +31,7 @@ def random_date(min_year, max_year):
 
 def open_url(url, waiter):
     options = webdriver.ChromeOptions()
-    #options.add_argument("--headless")
+    options.add_argument("--headless")
     options.add_argument('log-level=3')
     #new driver @ https://chromedriver.chromium.org/downloads
     dr = webdriver.Chrome(options=options, executable_path='E:/chromedriver.exe')#,service_args=['hide_console'])
